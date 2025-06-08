@@ -84,8 +84,8 @@ Below is a brief summary of each HTML page, including the key sections and funct
   - Projects displayed:  
     1. PyCalc (PyQt-based calculator)  
     2. URL Shortener (FastAPI + SQLite)  
-    3. Personal Finance Manager (Python + Excel integration)  
-    4. Linux Commands Cheat Sheet (static image download)  
+    3. Personal Finance Manager (Python + Google Sheets)  
+    4. Linux Commands Cheat Sheet (Interactive Readme with Linux commands)  
 
 ### 2. `projects.html` (Projects)
 - Contains four “project” sections, each with:  
@@ -116,8 +116,7 @@ Below is a brief summary of each HTML page, including the key sections and funct
   - Seventeen (17) total entries pulled from LinkedIn (January 2015 – Present), including roles such as:  
     - Solutions Engineer @ Qase  
     - Chief Executive Officer @ EVEREXPAND ENTERPRISES INC  
-    - Construction Professional @ CSM Waterworks  
-    - Warehouse Associate @ Amazon  
+    - Construction Professional @ CSM Waterworks 
     - Associate Site Reliability Engineer @ Workday  
     - Associate QA Engineer – Authentication @ Veeva Systems  
     - Child Support Specialist @ Kern County CMS  
@@ -126,7 +125,7 @@ Below is a brief summary of each HTML page, including the key sections and funct
   - Each entry includes a logo (pulled from LinkedIn CDN or local asset) and bullet points of responsibilities/achievements.  
 - **Education & Professional Development**  
   - Master of Science in Software Development (Boston University)  
-  - Bachelor of Science in Information Systems (San Francisco State University)  
+  - Bachelor of Science in Business Information Systems (San Francisco State University)  
   - DevOps Bootcamp (TechWorld with Nana)  
 - **Skills & Technologies**  
   - Comprehensive list of languages, frameworks, DevOps & SRE tools, testing & QA, web & mobile, databases, general tools, and soft skills.  
@@ -215,12 +214,12 @@ https://adrianeortiz.github.io/
 
 ### Custom Domain (Optional)
 
-If you later decide to point `adrianeortiz.com` or another custom domain to this Pages site, follow these steps:
-1. In your repository root, create a file named `CNAME` (no extension), containing exactly:
+If I later decide to point `adrianeortiz.com` or another custom domain to this Pages site, I will follow these steps:
+1. In the repository root, create a file named `CNAME` (no extension), containing exactly:
    ```
    adrianeortiz.com
    ```
-2. In your DNS provider (or Cloudflare), add the following **A records** for `@` pointing to GitHub’s IPv4 addresses:
+2. In my DNS provider (or Cloudflare), add the following **A records** for `@` pointing to GitHub’s IPv4 addresses:
    ```
    185.199.108.153
    185.199.109.153
@@ -244,7 +243,7 @@ assets/images/
 - **`pycalc-howto.gif`** (animation for the PyCalc project)  
 - **`url-shortener-demo.gif`** (animation for the URL Shortener project)  
 - **`personal_finance_manager.png`** (screenshot for the Personal Finance Manager project)  
-- **`Linux-Commands-Cheat-Sheet.jpg`** (static image download for the Linux cheat sheet)  
+- **`Linux-Commands-Cheat-Sheet.jpg`** (static image used for the Linux cheat sheet)  
 
 On `resume.html`, many logos are pulled directly from LinkedIn’s CDN (via `<img src="...">`). If any external link fails, the `onerror="this.style.display='none';"` attribute hides the broken image. You may choose to download these logos into `assets/images/` and update the `src` paths accordingly.
 
