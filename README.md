@@ -59,7 +59,7 @@ adrianeortiz.github.io/              ← Root of the GitHub Pages repository
 ├── contact.html                     ← Contact form and direct email link
 ├── index.html                       ← Homepage (hero + featured projects)
 ├── projects.html                    ← Detailed project descriptions with images & links
-├── resume.html                      ← Full resume (experience, education, skills, certifications)
+├── resume.html                      ← Full professional resume overview (experience, education, skills, certifications)
 ├── skills.html                      ← List of technical skills & “skill badge” cards
 └── README.md                        ← Project documentation (this file)
 ```
@@ -90,9 +90,9 @@ Below is a brief summary of each HTML page, including the key sections and funct
 ### 2. `projects.html` (Projects)
 - Contains four “project” sections, each with:  
   - A heading (e.g. “PyCalc”)  
-  - An animated GIF or PNG screenshot under `assets/images/`  
+  - An animated GIF or Image screenshot under `assets/images/`  
   - A descriptive paragraph  
-  - External link to GitHub repository or download  
+  - External link to GitHub repository 
 - Uses `<hr />` separators to keep content visually distinct.
 
 ### 3. `about.html` (About Me)
@@ -111,9 +111,9 @@ Below is a brief summary of each HTML page, including the key sections and funct
 
 ### 5. `resume.html` (Resume)
 - **Resume Header**  
-  - Profile photo, full name, email link, location, LinkedIn & GitHub links.  
+  - Profile photo, full name, email link, location, LinkedIn & GitHub links, home page link 
 - **Experience Section**  
-  - Seventeen (17) total entries pulled from LinkedIn (January 2015 – Present), including roles such as:  
+  - LinkedIn "Experience" section used as entries (January 2015 – Present), including roles such as:  
     - Solutions Engineer @ Qase  
     - Chief Executive Officer @ EVEREXPAND ENTERPRISES INC  
     - Construction Professional @ CSM Waterworks 
@@ -122,7 +122,7 @@ Below is a brief summary of each HTML page, including the key sections and funct
     - Child Support Specialist @ Kern County CMS  
     - Multiple volunteer positions (CrowdDoing)  
     - IT Support roles (Penumbra, RWS, Group Nine Media, San Francisco State University, Munchery)  
-  - Each entry includes a logo (pulled from LinkedIn CDN or local asset) and bullet points of responsibilities/achievements.  
+  - Each entry includes a logo (pulled from LinkedIn CDN or local asset) and bullet points of Skills used and acquired for each role.  
 - **Education & Professional Development**  
   - Master of Science in Software Development (Boston University)  
   - Bachelor of Science in Business Information Systems (San Francisco State University)  
@@ -193,42 +193,6 @@ This repository is configured as a **User Page**. GitHub Pages will automaticall
 https://adrianeortiz.github.io/
 ```
 
-### How to Push Updates
-
-1. **Stage and commit changes**:
-   ```bash
-   git add .
-   git commit -m "Update <page/file> with <changes>"
-   ```
-
-2. **Push to `main`**:
-   ```bash
-   git push origin main
-   ```
-
-3. **Wait 1–2 minutes** for GitHub Pages to rebuild the site. Then refresh:
-   ```
-   https://adrianeortiz.github.io/
-   ```
-   You should see your latest changes live.
-
-### Custom Domain (Optional)
-
-If I later decide to point `adrianeortiz.com` or another custom domain to this Pages site, I will follow these steps:
-1. In the repository root, create a file named `CNAME` (no extension), containing exactly:
-   ```
-   adrianeortiz.com
-   ```
-2. In my DNS provider (or Cloudflare), add the following **A records** for `@` pointing to GitHub’s IPv4 addresses:
-   ```
-   185.199.108.153
-   185.199.109.153
-   185.199.110.153
-   185.199.111.153
-   ```
-3. Add a **CNAME** record for `www` → `adrianeortiz.github.io`.  
-4. After DNS propagation (usually a few minutes to 24 hours), GitHub Pages will serve the site at both `https://adrianeortiz.com` and `https://www.adrianeortiz.com`.
-
 ---
 
 ## Asset Organization
@@ -245,8 +209,7 @@ assets/images/
 - **`personal_finance_manager.png`** (screenshot for the Personal Finance Manager project)  
 - **`Linux-Commands-Cheat-Sheet.jpg`** (static image used for the Linux cheat sheet)  
 
-On `resume.html`, many logos are pulled directly from LinkedIn’s CDN (via `<img src="...">`). If any external link fails, the `onerror="this.style.display='none';"` attribute hides the broken image. You may choose to download these logos into `assets/images/` and update the `src` paths accordingly.
-
+On `resume.html`, many logos are pulled directly from LinkedIn’s CDN (via `<img src="...">`). If any external link fails, the `onerror="this.style.display='none';"` attribute hides the broken image.
 ---
 
 ## Styling & Responsive Behavior
