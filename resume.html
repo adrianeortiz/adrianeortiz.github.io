@@ -6,449 +6,402 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Adrian Ortiz – Resume</title>
     <link rel="stylesheet" href="css/styles.css" />
-    <style>
-        /* ===================== Additional Styling for resume.html ===================== */
-        .resume-header {
-            text-align: center;
-            padding: 2rem 0;
-        }
-
-        .resume-header img {
-            width: 120px;
-            height: 120px;
-            border-radius: 50%;
-            object-fit: cover;
-            margin-bottom: 1rem;
-            border: 4px solid #333;
-        }
-
-        .resume-section {
-            max-width: 800px;
-            margin: 0 auto 2rem;
-            background-color: #fff;
-            padding: 2rem;
-            border-radius: 4px;
-
-        }
-
-        .experience-item {
-            display: flex;
-            align-items: flex-start;
-            margin-bottom: 2rem;
-        }
-
-        .experience-item img {
-            width: 60px;
-            height: 60px;
-            object-fit: contain;
-            margin-right: 1rem;
-        }
-
-        .experience-details {
-            flex: 1;
-        }
-
-        .experience-details h3 {
-            margin-bottom: 0.25rem;
-            font-size: 1.25rem;
-        }
-
-        .experience-details h4 {
-            margin-bottom: 0.5rem;
-            font-size: 1rem;
-            font-weight: normal;
-            color: #666;
-        }
-
-        .experience-details p {
-            margin-bottom: 0.5rem;
-            font-style: italic;
-            color: #333;
-        }
-
-        .experience-details .skills {
-            font-size: 0.9rem;
-            color: #444;
-            margin-top: 0.25rem;
-        }
-
-        .section-title {
-            font-size: 1.5rem;
-            margin-bottom: 1rem;
-            border-bottom: 2px solid #333;
-            padding-bottom: 0.5rem;
-        }
-
-        /* ============================================================================== */
-    </style>
 </head>
 
 <body>
-    <!-- ============================== HEADER ============================== -->
-    <header class="resume-header">
-        <img src="assets/images/profile-pic-compressed.jpg" alt="Adrian Ortiz Profile Photo" />
+
+    <!-- Global Header & Nav -->
+    <header>
+        <div class="logo">Adrian Ortiz</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="resume.html" class="active">Resume</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Profile header -->
+    <div class="resume-header">
+        <img src="assets/images/profile-pic-compressed.jpg" alt="Adrian Ortiz Photo" />
         <h1>Adrian Ortiz</h1>
         <p>
             <strong>Email:</strong>
             <a href="mailto:adrian.everardo.ortiz@gmail.com">adrian.everardo.ortiz@gmail.com</a>
             |
             <strong>Location:</strong> Burbank, CA
-            |
         </p>
         <p>
             <strong>LinkedIn:</strong>
-            <a href="https://www.linkedin.com/in/adrianeortiz/" target="_blank" rel="noopener noreferrer">
-                linkedin.com/in/adrianeortiz
-            </a>
+            <a href="https://www.linkedin.com/in/adrianeortiz/" target="_blank">linkedin.com/in/adrianeortiz</a>
             |
             <strong>GitHub:</strong>
-            <a href="https://github.com/adrianeortiz" target="_blank" rel="noopener noreferrer">
-                github.com/adrianeortiz
-            </a>
+            <a href="https://github.com/adrianeortiz" target="_blank">github.com/adrianeortiz</a>
         </p>
-        <a href="index.html">Back to Home</a>
-    </header>
+    </div>
 
-    <!-- ============================== EXPERIENCE SECTION ============================== -->
-    <section class="resume-section" id="experience">
-        <h2 class="section-title">Experience</h2>
+    <main>
 
-        <!-- 1. Solutions Engineer @ Qase -->
-        <div class="experience-item">
-            <img src="https://media.licdn.com/dms/image/v2/D4D0BAQHe8aNTUPt3TA/company-logo_200_200/company-logo_200_200/0/1689265711152/qaseio_logo?e=1754524800&v=beta&t=YFmMLZFukAxt4lGKhwYRIRIIegxfUUfXmrJ0uu2HbsE"
-                alt="Qase Logo" onerror="this.style.display='none';" />
-            <div class="experience-details">
-                <h3>Solutions Engineer</h3>
-                <h4>Qase • Remote</h4>
-                <p>Apr 2025 – Present</p>
-                <p class="skills">
-                    Skills: Solutions Engineering · QA Automation · Artificial Intelligence (AI) · CRM · Customer
-                    Experience · Test Management · SaaS · Software Development
-                </p>
+        <!-- EXPERIENCE SECTION  -->
+        <section class="resume-section" id="experience">
+            <h2 class="section-title">Experience</h2>
+
+            <!-- Solutions Engineer @ Qase -->
+            <div class="experience-item">
+                <img src="https://media.licdn.com/dms/image/v2/D4D0BAQHe8aNTUPt3TA/company-logo_200_200/company-logo_200_200/0/1689265711152/qaseio_logo?e=1754524800&v=beta&t=YFmMLZFukAxt4lGKhwYRIRIIegxfUUfXmrJ0uu2HbsE"
+                    alt="Qase Logo" onerror="this.style.display='none';" />
+                <div class="experience-details">
+                    <h3>Solutions Engineer</h3>
+                    <h4>Qase • Remote</h4>
+                    <p>Apr 2025 – Present</p>
+                    <p class="skills">
+                        Skills: Solutions Engineering · QA Automation · Artificial Intelligence (AI) · CRM · Customer
+                        Experience · Test Management · SaaS · Software Development
+                    </p>
+                </div>
             </div>
-        </div>
 
-        <!-- 2. Chief Executive Officer @ EVEREXPAND ENTERPRISES INC -->
-        <div class="experience-item">
-            <img src="https://media.licdn.com/dms/image/v2/D560BAQFSGb4N_A4yrQ/company-logo_100_100/company-logo_100_100/0/1719258138887?e=1754524800&v=beta&t=E0DlOS9myZFVmNstgDF8WayHxCldZYr26ZfB_7W-VUQ"
-                alt="EVEREXPAND ENTERPRISES INC Logo" onerror="this.style.display='none';" />
-            <div class="experience-details">
-                <h3>Chief Executive Officer</h3>
-                <h4>EVEREXPAND ENTERPRISES INC • Remote</h4>
-                <p>May 2024 – Present</p>
-                <p>
-                    As the CEO of EverExpand Enterprises Inc., I am leading the research and development of AI-driven
-                    solutions aimed at improving mental health outcomes. My work focuses on utilizing cutting-edge
-                    machine learning models and artificial intelligence to address critical challenges in mental health
-                    care.
-                </p>
-                <p class="skills">
-                    Skills: Direct Sales · Startups · Bash · Sales Operations · PyTorch · TensorFlow · Entrepreneurship
-                    · GCP · JavaScript · Python · AWS · CEO · Computer Science
-                </p>
+            <!-- Chief Executive Officer @ EVEREXPAND ENTERPRISES INC -->
+            <div class="experience-item">
+                <img src="https://media.licdn.com/dms/image/v2/D560BAQFSGb4N_A4yrQ/company-logo_100_100/company-logo_100_100/0/1719258138887?e=1754524800&v=beta&t=E0DlOS9myZFVmNstgDF8WayHxCldZYr26ZfB_7W-VUQ"
+                    alt="EVEREXPAND ENTERPRISES INC Logo" onerror="this.style.display='none';" />
+                <div class="experience-details">
+                    <h3>Chief Executive Officer</h3>
+                    <h4>EVEREXPAND ENTERPRISES INC • Remote</h4>
+                    <p>May 2024 – Present</p>
+                    <p>
+                        As the CEO of EverExpand Enterprises Inc., I am leading the research and development of
+                        AI-driven
+                        solutions aimed at improving mental health outcomes. My work focuses on utilizing cutting-edge
+                        machine learning models and artificial intelligence to address critical challenges in mental
+                        health
+                        care.
+                    </p>
+                    <p class="skills">
+                        Skills: Direct Sales · Startups · Bash · Sales Operations · PyTorch · TensorFlow ·
+                        Entrepreneurship
+                        · GCP · JavaScript · Python · AWS · CEO · Computer Science
+                    </p>
+                </div>
             </div>
-        </div>
 
-        <!-- 3. Construction Professional @ CSM Waterworks -->
-        <div class="experience-item">
-            <img src="https://media.licdn.com/dms/image/v2/D560BAQHaWvp-uFvhRA/company-logo_200_200/B56ZcYypvCGQAI-/0/1748467621152/csm_waterworks_logo?e=1754524800&v=beta&t=UaFtatF_tRL_FIfORRUV8q0XMudwAIhtf4rEeq_rDZw"
-                alt="CSM Waterworks Logo" onerror="this.style.display='none';" />
-            <div class="experience-details">
-                <h3>Construction Professional (Aspiring Software Developer)</h3>
-                <h4>CSM Waterworks • On-site, California & Tennessee</h4>
-                <p>Dec 2024 – Mar 2025</p>
-                <p class="skills">
-                    Skills: Physical Training · Fitness · Construction · Teamwork
-                </p>
+            <!-- Career Break (Master’s Continuation) -->
+            <div class="experience-item">
+                <img src="https://static.licdn.com/aero-v1/sc/h/p4pvtlgggtwlz9lht17nvnqq" alt="Career Break Icon"
+                    onerror="this.style.display='none';" />
+                <div class="experience-details">
+                    <h3>Career Break (Construction Role & Master’s Coursework)</h3>
+                    <h4>Professional Development • On-site California & Tennessee</h4>
+                    <p>Dec 2024 – Apr 2025</p>
+                    <p>
+                        Balanced hands-on construction work with continued Master’s coursework in Software Development.
+                    </p>
+                    <p class="skills">
+                        Skills: Concrete Work · Project Coordination · Precision Engineering
+                    </p>
+                </div>
             </div>
-        </div>
 
-
-        <!-- 4. Associate Site Reliability Engineer @ Workday -->
-        <div class="experience-item">
-            <img src="https://media.licdn.com/dms/image/v2/D4D0BAQGKeNem9seahg/company-logo_200_200/company-logo_200_200/0/1730301071878/workday_logo?e=1754524800&v=beta&t=nGxydqdbxZ_x45i5S5mA5poqyi_MvWPUynfx872XjDg"
-                alt="Workday Logo" onerror="this.style.display='none';" />
-            <div class="experience-details">
-                <h3>Associate Site Reliability Engineer</h3>
-                <h4>Workday • Hybrid, Pleasanton, CA</h4>
-                <p>Jul 2022 – Oct 2023</p>
-                <p class="skills">
-                    Skills: Ansible · Bash · CI/CD (Jenkins, GitHub Actions) · Linux Sysadmin · Kubernetes · Terraform ·
-                    Docker · AWS · Python · Git · Communication
-                </p>
+            <!-- Construction Professional @ CSM Waterworks -->
+            <div class="experience-item">
+                <img src="https://media.licdn.com/dms/image/v2/D560BAQHaWvp-uFvhRA/company-logo_200_200/B56ZcYypvCGQAI-/0/1748467621152/csm_waterworks_logo?e=1754524800&v=beta&t=UaFtatF_tRL_FIfORRUV8q0XMudwAIhtf4rEeq_rDZw"
+                    alt="CSM Waterworks Logo" onerror="this.style.display='none';" />
+                <div class="experience-details">
+                    <h3>Construction Professional (Aspiring Software Developer)</h3>
+                    <h4>CSM Waterworks • On-site, California & Tennessee</h4>
+                    <p>Dec 2024 – Mar 2025</p>
+                    <p class="skills">
+                        Skills: Physical Training · Fitness · Construction · Teamwork
+                    </p>
+                </div>
             </div>
-        </div>
 
-        <!-- 5. Associate QA Engineer – Authentication @ Veeva Systems -->
-        <div class="experience-item">
-            <img src="https://media.licdn.com/dms/image/v2/C4E0BAQHW29Wyz9Q11w/company-logo_200_200/company-logo_200_200/0/1631340331617?e=1754524800&v=beta&t=4IIN2X8lBq4cGKCqNXYIuASrMviL8dlQ7Uk-DBu7oug"
-                alt="Veeva Systems Logo" onerror="this.style.display='none';" />
-            <div class="experience-details">
-                <h3>Associate QA Engineer – Authentication</h3>
-                <h4>Veeva Systems • Hybrid, Pleasanton, CA</h4>
-                <p>Oct 2019 – Jun 2022</p>
-                <p class="skills">
-                    Skills: QA Automation (Selenium, PyTest) · Bash · Jenkins · CI/CD · Linux Sysadmin · Jira · Java ·
-                    SQL · Git · AWS · Customer Service · Teamwork · Communication
-                </p>
+            <!-- Child Support Specialist @ Kern County Child Support Services -->
+            <div class="experience-item">
+                <img src="https://media.licdn.com/dms/image/v2/D4E0BAQG5u43izlSxoQ/company-logo_200_200/company-logo_200_200/0/1698953026615?e=1754524800&v=beta&t=tMjIhALtLsaE4RqwR-1sghG83hvuAEAwbP7IOsoqXYs"
+                    alt="Kern County Logo" onerror="this.style.display='none';" />
+                <div class="experience-details">
+                    <h3>Child Support Specialist</h3>
+                    <h4>Kern County Child Support Services • On-site, Bakersfield, CA</h4>
+                    <p>May 2024 – Oct 2024</p>
+                    <p class="skills">
+                        Skills: Excel/VBA · Power BI · Power Automate · Office 365 · Customer Service · Automation ·
+                        Communication · Teamwork
+                    </p>
+                </div>
             </div>
-        </div>
 
-        <!-- 6. Child Support Specialist @ Kern County Child Support Services -->
-        <div class="experience-item">
-            <img src="https://media.licdn.com/dms/image/v2/D4E0BAQG5u43izlSxoQ/company-logo_200_200/company-logo_200_200/0/1698953026615?e=1754524800&v=beta&t=tMjIhALtLsaE4RqwR-1sghG83hvuAEAwbP7IOsoqXYs"
-                alt="Kern County Logo" onerror="this.style.display='none';" />
-            <div class="experience-details">
-                <h3>Child Support Specialist</h3>
-                <h4>Kern County Child Support Services • On-site, Bakersfield, CA</h4>
-                <p>May 2024 – Oct 2024</p>
-                <p class="skills">
-                    Skills: Excel/VBA · Power BI · Power Automate · Office 365 · Customer Service · Automation ·
-                    Communication · Teamwork
-                </p>
+
+            <!-- Volunteer AI Mobile Software Engineer @ CrowdDoing -->
+            <div class="experience-item">
+                <img src="https://media.licdn.com/dms/image/v2/C560BAQEdZ_alupHRHw/company-logo_200_200/company-logo_200_200/0/1630617837681/crowddoing_logo?e=1754524800&v=beta&t=8sTPlr71CHPdb0OdUF2uoq4l7cATgJ7tEQ8Q5zFaJEY"
+                    alt="CrowdDoing Logo" onerror="this.style.display='none';" />
+                <div class="experience-details">
+                    <h3>Volunteer AI Mobile Software Engineer</h3>
+                    <h4>CrowdDoing • Remote</h4>
+                    <p>Jan 2024 – Mar 2025</p>
+                    <p class="skills">
+                        Skills: React.js · React Native · Python · Machine Learning · Mobile Development · SDLC · Git ·
+                        Computer Science
+                    </p>
+                </div>
             </div>
-        </div>
 
-        <!-- 7. Volunteer AI Mobile Software Engineer @ CrowdDoing -->
-        <div class="experience-item">
-            <img src="https://media.licdn.com/dms/image/v2/C560BAQEdZ_alupHRHw/company-logo_200_200/company-logo_200_200/0/1630617837681/crowddoing_logo?e=1754524800&v=beta&t=8sTPlr71CHPdb0OdUF2uoq4l7cATgJ7tEQ8Q5zFaJEY"
-                alt="CrowdDoing Logo" onerror="this.style.display='none';" />
-            <div class="experience-details">
-                <h3>Volunteer AI Mobile Software Engineer</h3>
-                <h4>CrowdDoing • Remote</h4>
-                <p>Jan 2024 – Mar 2025</p>
-                <p class="skills">
-                    Skills: React.js · React Native · Python · Machine Learning · Mobile Development · SDLC · Git ·
-                    Computer Science
-                </p>
+            <!-- Volunteer AI Software Engineer @ CrowdDoing -->
+            <div class="experience-item">
+                <img src="https://media.licdn.com/dms/image/v2/C560BAQEdZ_alupHRHw/company-logo_200_200/company-logo_200_200/0/1630617837681/crowddoing_logo?e=1754524800&v=beta&t=8sTPlr71CHPdb0OdUF2uoq4l7cATgJ7tEQ8Q5zFaJEY"
+                    alt="CrowdDoing Logo" onerror="this.style.display='none';" />
+                <div class="experience-details">
+                    <h3>Volunteer AI Software Engineer</h3>
+                    <h4>CrowdDoing • Remote</h4>
+                    <p>Jan 2024 – Mar 2025</p>
+                    <p class="skills">
+                        Skills: Python · FastAPI · Machine Learning · AI · Software Documentation · SDLC · Git
+                    </p>
+                </div>
             </div>
-        </div>
 
-        <!-- 8. Volunteer AI Software Engineer @ CrowdDoing -->
-        <div class="experience-item">
-            <img src="https://media.licdn.com/dms/image/v2/C560BAQEdZ_alupHRHw/company-logo_200_200/company-logo_200_200/0/1630617837681/crowddoing_logo?e=1754524800&v=beta&t=8sTPlr71CHPdb0OdUF2uoq4l7cATgJ7tEQ8Q5zFaJEY"
-                alt="CrowdDoing Logo" onerror="this.style.display='none';" />
-            <div class="experience-details">
-                <h3>Volunteer AI Software Engineer</h3>
-                <h4>CrowdDoing • Remote</h4>
-                <p>Jan 2024 – Mar 2025</p>
-                <p class="skills">
-                    Skills: Python · FastAPI · Machine Learning · AI · Software Documentation · SDLC · Git
-                </p>
+            <!-- Volunteer Mobile Application Developer @ CrowdDoing -->
+            <div class="experience-item">
+                <img src="https://media.licdn.com/dms/image/v2/C560BAQEdZ_alupHRHw/company-logo_200_200/company-logo_200_200/0/1630617837681/crowddoing_logo?e=1754524800&v=beta&t=8sTPlr71CHPdb0OdUF2uoq4l7cATgJ7tEQ8Q5zFaJEY"
+                    alt="CrowdDoing Logo" onerror="this.style.display='none';" />
+                <div class="experience-details">
+                    <h3>Volunteer Mobile Application Developer</h3>
+                    <h4>CrowdDoing • Remote</h4>
+                    <p>Jan 2024 – Mar 2025</p>
+                    <p class="skills">
+                        Skills: React.js · React Native · JavaScript · Android Studio · Xcode · Git · Mobile Development
+                    </p>
+                </div>
             </div>
-        </div>
 
-        <!-- 9. Volunteer Mobile Application Developer @ CrowdDoing -->
-        <div class="experience-item">
-            <img src="https://media.licdn.com/dms/image/v2/C560BAQEdZ_alupHRHw/company-logo_200_200/company-logo_200_200/0/1630617837681/crowddoing_logo?e=1754524800&v=beta&t=8sTPlr71CHPdb0OdUF2uoq4l7cATgJ7tEQ8Q5zFaJEY"
-                alt="CrowdDoing Logo" onerror="this.style.display='none';" />
-            <div class="experience-details">
-                <h3>Volunteer Mobile Application Developer</h3>
-                <h4>CrowdDoing • Remote</h4>
-                <p>Jan 2024 – Mar 2025</p>
-                <p class="skills">
-                    Skills: React.js · React Native · JavaScript · Android Studio · Xcode · Git · Mobile Development
-                </p>
+
+            <!-- Career Break (Professional Development) -->
+            <div class="experience-item">
+                <img src="https://static.licdn.com/aero-v1/sc/h/p4pvtlgggtwlz9lht17nvnqq" alt="Career Break Icon"
+                    onerror="this.style.display='none';" />
+                <div class="experience-details">
+                    <h3>Career Break (Master’s Program Entry)</h3>
+                    <h4>Professional Development • Remote</h4>
+                    <p>Oct 2023 – Jan 2024</p>
+                    <p>
+                        Dedicated time to begin Master’s in Software Development at Boston University (Metropolitan
+                        College).
+                    </p>
+                    <p class="skills">
+                        Skills: Ansible · Programming Languages · DevOps · Git · Computer Science
+                    </p>
+                </div>
             </div>
-        </div>
 
-        <!-- 10. Career Break (Professional Development) -->
-        <div class="experience-item">
-            <img src="https://static.licdn.com/aero-v1/sc/h/p4pvtlgggtwlz9lht17nvnqq" alt="Career Break Icon"
-                onerror="this.style.display='none';" />
-            <div class="experience-details">
-                <h3>Career Break (Master’s Program Entry)</h3>
-                <h4>Professional Development • Remote</h4>
-                <p>Oct 2023 – Jan 2024</p>
-                <p>
-                    Dedicated time to begin Master’s in Software Development at Boston University (Metropolitan
-                    College).
-                </p>
-                <p class="skills">
-                    Skills: Ansible · Programming Languages · DevOps · Git · Computer Science
-                </p>
+            <!-- Associate Site Reliability Engineer @ Workday -->
+            <div class="experience-item">
+                <img src="https://media.licdn.com/dms/image/v2/D4D0BAQGKeNem9seahg/company-logo_200_200/company-logo_200_200/0/1730301071878/workday_logo?e=1754524800&v=beta&t=nGxydqdbxZ_x45i5S5mA5poqyi_MvWPUynfx872XjDg"
+                    alt="Workday Logo" onerror="this.style.display='none';" />
+                <div class="experience-details">
+                    <h3>Associate Site Reliability Engineer</h3>
+                    <h4>Workday • Hybrid, Pleasanton, CA</h4>
+                    <p>Jul 2022 – Oct 2023</p>
+                    <p class="skills">
+                        Skills: Ansible · Bash · CI/CD (Jenkins, GitHub Actions) · Linux Sysadmin · Kubernetes ·
+                        Terraform ·
+                        Docker · AWS · Python · Git · Communication
+                    </p>
+                </div>
             </div>
-        </div>
 
-        <!-- 11. Career Break (Master’s Continuation) -->
-        <div class="experience-item">
-            <img src="https://static.licdn.com/aero-v1/sc/h/p4pvtlgggtwlz9lht17nvnqq" alt="Career Break Icon"
-                onerror="this.style.display='none';" />
-            <div class="experience-details">
-                <h3>Career Break (Construction Role & Master’s Coursework)</h3>
-                <h4>Professional Development • On-site California & Tennessee</h4>
-                <p>Dec 2024 – Apr 2025</p>
-                <p>
-                    Balanced hands-on construction work with continued Master’s coursework in Software Development.
-                </p>
-                <p class="skills">
-                    Skills: Concrete Work · Project Coordination · Precision Engineering
-                </p>
+            <!-- Associate QA Engineer – Authentication @ Veeva Systems -->
+            <div class="experience-item">
+                <img src="https://media.licdn.com/dms/image/v2/C4E0BAQHW29Wyz9Q11w/company-logo_200_200/company-logo_200_200/0/1631340331617?e=1754524800&v=beta&t=4IIN2X8lBq4cGKCqNXYIuASrMviL8dlQ7Uk-DBu7oug"
+                    alt="Veeva Systems Logo" onerror="this.style.display='none';" />
+                <div class="experience-details">
+                    <h3>Associate QA Engineer – Authentication</h3>
+                    <h4>Veeva Systems • Hybrid, Pleasanton, CA</h4>
+                    <p>Oct 2019 – Jun 2022</p>
+                    <p class="skills">
+                        Skills: QA Automation (Selenium, PyTest) · Bash · Jenkins · CI/CD · Linux Sysadmin · Jira · Java
+                        ·
+                        SQL · Git · AWS · Customer Service · Teamwork · Communication
+                    </p>
+                </div>
             </div>
-        </div>
 
-        <!-- 12. IT Support Specialist @ Penumbra, Inc. -->
-        <div class="experience-item">
-            <img src="https://media.licdn.com/dms/image/v2/D560BAQGi5qIoKM6dFQ/company-logo_200_200/B56ZYV9ZE5HEAI-/0/1744125138865?e=1754524800&v=beta&t=9frr1YaKwDDfORm9PgrRbkhPgtyrII6JG3bhgykKH1Q"
-                alt="Penumbra, Inc. Logo" onerror="this.style.display='none';" />
-            <div class="experience-details">
-                <h3>IT Support Specialist</h3>
-                <h4>Penumbra, Inc. • On-site, Alameda, CA</h4>
-                <p>Mar 2019 – Oct 2019</p>
-                <p class="skills">
-                    Skills: Active Directory · PowerShell · Mac OS · Windows · Troubleshooting · Customer Service ·
-                    Teamwork
-                </p>
+            <!-- IT Support Specialist @ Penumbra, Inc. -->
+            <div class="experience-item">
+                <img src="https://media.licdn.com/dms/image/v2/D560BAQGi5qIoKM6dFQ/company-logo_200_200/B56ZYV9ZE5HEAI-/0/1744125138865?e=1754524800&v=beta&t=9frr1YaKwDDfORm9PgrRbkhPgtyrII6JG3bhgykKH1Q"
+                    alt="Penumbra, Inc. Logo" onerror="this.style.display='none';" />
+                <div class="experience-details">
+                    <h3>IT Support Specialist</h3>
+                    <h4>Penumbra, Inc. • On-site, Alameda, CA</h4>
+                    <p>Mar 2019 – Oct 2019</p>
+                    <p class="skills">
+                        Skills: Active Directory · PowerShell · Mac OS · Windows · Troubleshooting · Customer Service ·
+                        Teamwork
+                    </p>
+                </div>
             </div>
-        </div>
 
-        <!-- 13. Helpdesk Technician, Tier II @ RWS -->
-        <div class="experience-item">
-            <img src="https://media.licdn.com/dms/image/v2/D4D0BAQHp8SQdhwh8ow/company-logo_200_200/B4DZb4U7zVGYAI-/0/1747922959928/rws_group_logo?e=1754524800&v=beta&t=W0f9ql7AUsQQLPs3DWpGvnMqbnVpyCGgAxNV8ek7CsQ"
-                alt="RWS Logo" onerror="this.style.display='none';" />
-            <div class="experience-details">
-                <h3>Helpdesk Technician, Tier II</h3>
-                <h4>RWS • On-site, San Francisco, CA</h4>
-                <p>Oct 2017 – Mar 2019</p>
-                <p class="skills">
-                    Skills: VOIP · Active Directory · Bash · Windows Server · SQL · Troubleshooting · Customer Service
-                </p>
+            <!-- Helpdesk Technician, Tier II @ RWS -->
+            <div class="experience-item">
+                <img src="https://media.licdn.com/dms/image/v2/D4D0BAQHp8SQdhwh8ow/company-logo_200_200/B4DZb4U7zVGYAI-/0/1747922959928/rws_group_logo?e=1754524800&v=beta&t=W0f9ql7AUsQQLPs3DWpGvnMqbnVpyCGgAxNV8ek7CsQ"
+                    alt="RWS Logo" onerror="this.style.display='none';" />
+                <div class="experience-details">
+                    <h3>Helpdesk Technician, Tier II</h3>
+                    <h4>RWS • On-site, San Francisco, CA</h4>
+                    <p>Oct 2017 – Mar 2019</p>
+                    <p class="skills">
+                        Skills: VOIP · Active Directory · Bash · Windows Server · SQL · Troubleshooting · Customer
+                        Service
+                    </p>
+                </div>
             </div>
-        </div>
 
-        <!-- 14. I.T. Support Specialist @ Group Nine Media -->
-        <div class="experience-item">
-            <img src="https://media.licdn.com/dms/image/v2/C4E0BAQG6sq2IhtJJ3A/company-logo_200_200/company-logo_200_200/0/1637361746071/group_nine_media_logo?e=1754524800&v=beta&t=Wx0tzxEbSsd8T7CRQD_8QYXPLKgpW_9S-1sE0SPrhzo"
-                alt="Group Nine Media Logo" onerror="this.style.display='none';" />
-            <div class="experience-details">
-                <h3>I.T. Support Specialist</h3>
-                <h4>Group Nine Media • On-site, San Francisco, CA</h4>
-                <p>Jun 2017 – Sep 2017</p>
-                <p class="skills">
-                    Skills: Mac OS · Linux · VOIP · Wireless Networking · Video Conferencing · Troubleshooting
-                </p>
+            <!-- I.T. Support Specialist @ Group Nine Media -->
+            <div class="experience-item">
+                <img src="https://media.licdn.com/dms/image/v2/C4E0BAQG6sq2IhtJJ3A/company-logo_200_200/company-logo_200_200/0/1637361746071/group_nine_media_logo?e=1754524800&v=beta&t=Wx0tzxEbSsd8T7CRQD_8QYXPLKgpW_9S-1sE0SPrhzo"
+                    alt="Group Nine Media Logo" onerror="this.style.display='none';" />
+                <div class="experience-details">
+                    <h3>I.T. Support Specialist</h3>
+                    <h4>Group Nine Media • On-site, San Francisco, CA</h4>
+                    <p>Jun 2017 – Sep 2017</p>
+                    <p class="skills">
+                        Skills: Mac OS · Linux · VOIP · Wireless Networking · Video Conferencing · Troubleshooting
+                    </p>
+                </div>
             </div>
-        </div>
 
-        <!-- 15. I.T. Help Desk Assistant @ San Francisco State University -->
-        <div class="experience-item">
-            <img src="https://media.licdn.com/dms/image/v2/D560BAQH0Y3f-x_jJdQ/company-logo_200_200/B56ZbQMroTGgAM-/0/1747249707813/san_francisco_state_university_logo?e=1754524800&v=beta&t=rccGuVeLm6cHnqbwZoLOi7hWCBzd2uVtbtinu5jSo8k"
-                alt="San Francisco State University Logo" onerror="this.style.display='none';" />
-            <div class="experience-details">
-                <h3>I.T. Help Desk Assistant</h3>
-                <h4>San Francisco State University • On-site, San Francisco, CA</h4>
-                <p>Aug 2016 – Jun 2017</p>
-                <p class="skills">
-                    Skills: Video Conferencing · Wireless Networking · Mac OS · Windows · Troubleshooting · Customer
-                    Service
-                </p>
+            <!-- I.T. Help Desk Assistant @ San Francisco State University -->
+            <div class="experience-item">
+                <img src="https://media.licdn.com/dms/image/v2/D560BAQH0Y3f-x_jJdQ/company-logo_200_200/B56ZbQMroTGgAM-/0/1747249707813/san_francisco_state_university_logo?e=1754524800&v=beta&t=rccGuVeLm6cHnqbwZoLOi7hWCBzd2uVtbtinu5jSo8k"
+                    alt="San Francisco State University Logo" onerror="this.style.display='none';" />
+                <div class="experience-details">
+                    <h3>I.T. Help Desk Assistant</h3>
+                    <h4>San Francisco State University • On-site, San Francisco, CA</h4>
+                    <p>Aug 2016 – Jun 2017</p>
+                    <p class="skills">
+                        Skills: Video Conferencing · Wireless Networking · Mac OS · Windows · Troubleshooting · Customer
+                        Service
+                    </p>
+                </div>
             </div>
-        </div>
 
-        <!-- 16. I.T. Specialist @ Munchery -->
-        <div class="experience-item">
-            <img src="https://media.licdn.com/dms/image/v2/C4E0BAQEC3uU2rXgdDQ/company-logo_200_200/company-logo_200_200/0/1631314010870?e=1754524800&v=beta&t=vTladCj1SHpHRtERR6RNV6pysjoKlwOlswz4ebw6q4o"
-                alt="Munchery Logo" onerror="this.style.display='none';" />
-            <div class="experience-details">
-                <h3>I.T. Specialist</h3>
-                <h4>Munchery • On-site, San Francisco, CA</h4>
-                <p>Feb 2016 – Aug 2016</p>
-                <p class="skills">
-                    Skills: VOIP · Linux · Mac OS · Video Conferencing · Troubleshooting · Teamwork
-                </p>
+            <!-- I.T. Specialist @ Munchery -->
+            <div class="experience-item">
+                <img src="https://media.licdn.com/dms/image/v2/C4E0BAQEC3uU2rXgdDQ/company-logo_200_200/company-logo_200_200/0/1631314010870?e=1754524800&v=beta&t=vTladCj1SHpHRtERR6RNV6pysjoKlwOlswz4ebw6q4o"
+                    alt="Munchery Logo" onerror="this.style.display='none';" />
+                <div class="experience-details">
+                    <h3>I.T. Specialist</h3>
+                    <h4>Munchery • On-site, San Francisco, CA</h4>
+                    <p>Feb 2016 – Aug 2016</p>
+                    <p class="skills">
+                        Skills: VOIP · Linux · Mac OS · Video Conferencing · Troubleshooting · Teamwork
+                    </p>
+                </div>
             </div>
-        </div>
 
-        <!-- 17. I.T. Help Desk Assistant @ San Francisco State University (Earlier) -->
-        <div class="experience-item">
-            <img src="https://media.licdn.com/dms/image/v2/D560BAQH0Y3f-x_jJdQ/company-logo_200_200/B56ZbQMroTGgAM-/0/1747249707813/san_francisco_state_university_logo?e=1754524800&v=beta&t=rccGuVeLm6cHnqbwZoLOi7hWCBzd2uVtbtinu5jSo8k"
-                alt="San Francisco State University Logo" onerror="this.style.display='none';" />
-            <div class="experience-details">
-                <h3>I.T. Help Desk Assistant</h3>
-                <h4>San Francisco State University • On-site, San Francisco, CA</h4>
-                <p>Jan 2015 – Feb 2016</p>
-                <p>
-                    Initiated the HR I.T. Help Desk Assistant role by showcasing work ethic as a Student Assistant for
-                    HR Payroll.
-                </p>
-                <p class="skills">
-                    Skills: VOIP · Video Conferencing · Wireless Networking · Mac OS · Windows · Troubleshooting ·
-                    Customer Service
-                </p>
+            <!-- I.T. Help Desk Assistant @ San Francisco State University (Earlier) -->
+            <div class="experience-item">
+                <img src="https://media.licdn.com/dms/image/v2/D560BAQH0Y3f-x_jJdQ/company-logo_200_200/B56ZbQMroTGgAM-/0/1747249707813/san_francisco_state_university_logo?e=1754524800&v=beta&t=rccGuVeLm6cHnqbwZoLOi7hWCBzd2uVtbtinu5jSo8k"
+                    alt="San Francisco State University Logo" onerror="this.style.display='none';" />
+                <div class="experience-details">
+                    <h3>I.T. Help Desk Assistant</h3>
+                    <h4>San Francisco State University • On-site, San Francisco, CA</h4>
+                    <p>Jan 2015 – Feb 2016</p>
+                    <p>
+                        Initiated the HR I.T. Help Desk Assistant role by showcasing work ethic as a Student Assistant
+                        for
+                        HR Payroll.
+                    </p>
+                    <p class="skills">
+                        Skills: VOIP · Video Conferencing · Wireless Networking · Mac OS · Windows · Troubleshooting ·
+                        Customer Service
+                    </p>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- ============================== EDUCATION SECTION ============================== -->
-    <section class="resume-section" id="education">
-        <h2 class="section-title">Education & Professional Development</h2>
-        <div class="experience-details">
-            <img src="https://media.licdn.com/dms/image/v2/C560BAQFBK74krMig1Q/company-logo_200_200/company-logo_200_200/0/1631319084422?e=1754524800&v=beta&t=coMDwrQd2SOND7SbyeCWNCJNlT3DBeDfssJfw1zZHEs"
-                alt="Boston University Logo" onerror="this.style.display='none';" />
-            <h3>Master of Science in Software Development</h3>
-            <p>Boston University Metropolitan College • Online</p>
-            <p><em>Jan 2024 – Present</em></p>
+        <!--  EDUCATION SECTION -->
+        <section class="resume-section" id="education">
+            <h2 class="section-title">Education & Professional Development</h2>
+            <div class="experience-details">
+                <img src="https://media.licdn.com/dms/image/v2/C560BAQFBK74krMig1Q/company-logo_200_200/company-logo_200_200/0/1631319084422?e=1754524800&v=beta&t=coMDwrQd2SOND7SbyeCWNCJNlT3DBeDfssJfw1zZHEs"
+                    alt="Boston University Logo" onerror="this.style.display='none';" />
+                <h3>Master of Science in Software Development</h3>
+                <p>Boston University Metropolitan College • Online</p>
+                <p><em>Jan 2024 – Present</em></p>
+                <ul>
+                    <li>Coursework in Data Structures, Algorithms, DevOps, Cloud Computing, AI/ML.</li>
+                    <li>Using Active Recall & Spaced Repetition for retention.</li>
+                </ul>
+
+                <img src="https://media.licdn.com/dms/image/v2/D560BAQHS9-BFwen6Ig/company-logo_200_200/B56Zb0.Y2iGgAM-/0/1747866717867/san_francisco_state_university_college_of_business_logo?e=1754524800&v=beta&t=9cFWqKrt8LBWnS-IzzEjFVRkd-F8-mn296qPadfUbQ4"
+                    alt="San Francisco State University Logo" onerror="this.style.display='none';" />
+                <h3>Bachelor of Science in Information Systems</h3>
+                <p>San Francisco State University • Hybrid, San Francisco, CA</p>
+                <p><em>Aug 2013 – May 2017</em></p>
+                <ul>
+                    <li>Concentration in Networking & Systems Administration.</li>
+                    <li>Dean’s List Recipient.</li>
+                </ul>
+
+                <img src="https://media.licdn.com/dms/image/v2/C4D0BAQG13nU223V5tA/company-logo_200_200/company-logo_200_200/0/1657885681886?e=1754524800&v=beta&t=t0KdgYm85qHpKULcoFMXtrCS_J3yJGjmwQnO39Ewql0"
+                    alt="TechWorld with Nana Logo" onerror="this.style.display='none';" />
+                <h3>DevOps Bootcamp</h3>
+                <p>TechWorld with Nana • Online</p>
+                <p><em>2021</em></p>
+                <ul>
+                    <li>Online DevOps Engineering Bootcamp, which covers topics ranging from the Introduction to DevOps,
+                        to containers in Docker, Kubernetes, Build Automation - CI/CD with Jenkins, Infrastructure as
+                        Code with Terraform, Automation with Python, Configuration Management with Ansible and more!
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- SKILLS SECTION -->
+        <section class="resume-section" id="skills">
+            <h2 class="section-title">Skills & Technologies</h2>
             <ul>
-                <li>Coursework in Data Structures, Algorithms, DevOps, Cloud Computing, AI/ML.</li>
-                <li>Using Active Recall & Spaced Repetition for retention.</li>
-            </ul>
-
-            <img src="https://media.licdn.com/dms/image/v2/D560BAQHS9-BFwen6Ig/company-logo_200_200/B56Zb0.Y2iGgAM-/0/1747866717867/san_francisco_state_university_college_of_business_logo?e=1754524800&v=beta&t=9cFWqKrt8LBWnS-IzzEjFVRkd-F8-mn296qPadfUbQ4"
-                alt="San Francisco State University Logo" onerror="this.style.display='none';" />
-            <h3>Bachelor of Science in Information Systems</h3>
-            <p>San Francisco State University • Hybrid, San Francisco, CA</p>
-            <p><em>Aug 2013 – May 2017</em></p>
-            <ul>
-                <li>Concentration in Networking & Systems Administration.</li>
-                <li>Dean’s List Recipient.</li>
-            </ul>
-
-            <img src="https://media.licdn.com/dms/image/v2/C4D0BAQG13nU223V5tA/company-logo_200_200/company-logo_200_200/0/1657885681886?e=1754524800&v=beta&t=t0KdgYm85qHpKULcoFMXtrCS_J3yJGjmwQnO39Ewql0"
-                alt="TechWorld with Nana Logo" onerror="this.style.display='none';" />
-            <h3>DevOps Bootcamp</h3>
-            <p>TechWorld with Nana • Online</p>
-            <p><em>2021</em></p>
-            <ul>
-                <li>Online DevOps Engineering Bootcamp, which covers topics ranging from the Introduction to DevOps,
-                    to containers in Docker, Kubernetes, Build Automation - CI/CD with Jenkins, Infrastructure as
-                    Code with Terraform, Automation with Python, Configuration Management with Ansible and more!
+                <li><strong>Languages & Frameworks:</strong> Python · Java · JavaScript · React/React Native · Bash ·
+                    SQL
                 </li>
+                <li><strong>DevOps & SRE:</strong> Docker · Kubernetes · Terraform · Ansible · AWS · GCP · Jenkins ·
+                    GitHub
+                    Actions</li>
+                <li><strong>Testing & QA:</strong> Selenium · PyTest · Qase · CI/CD pipelines</li>
+                <li><strong>Web & Mobile:</strong> FastAPI · Node.js · PyQt · Android Studio · Xcode · HTML/CSS</li>
+                <li><strong>Databases:</strong> PostgreSQL · SQLite · Firebase</li>
+                <li><strong>Tools & Procedure:</strong> Git · VS Code · iTerm2 · Notion · Excel/VBA · Office 365</li>
+                <li><strong>Soft Skills:</strong> Leadership · Communication · Teamwork · Agile Methodologies</li>
             </ul>
-        </div>
-    </section>
+        </section>
 
-    <!-- ============================== SKILLS SECTION ============================== -->
-    <section class="resume-section" id="skills">
-        <h2 class="section-title">Skills & Technologies</h2>
-        <ul>
-            <li><strong>Languages & Frameworks:</strong> Python · Java · JavaScript · React/React Native · Bash · SQL
-            </li>
-            <li><strong>DevOps & SRE:</strong> Docker · Kubernetes · Terraform · Ansible · AWS · GCP · Jenkins · GitHub
-                Actions</li>
-            <li><strong>Testing & QA:</strong> Selenium · PyTest · Qase · CI/CD pipelines</li>
-            <li><strong>Web & Mobile:</strong> FastAPI · Node.js · PyQt · Android Studio · Xcode · HTML/CSS</li>
-            <li><strong>Databases:</strong> PostgreSQL · SQLite · Firebase</li>
-            <li><strong>Tools & Procedure:</strong> Git · VS Code · iTerm2 · Notion · Excel/VBA · Office 365</li>
-            <li><strong>Soft Skills:</strong> Leadership · Communication · Teamwork · Agile Methodologies</li>
-        </ul>
-    </section>
+        <!--  CERTIFICATIONS SECTION -->
+        <section class="resume-section" id="certifications">
+            <h2 class="section-title">Certifications</h2>
+            <ul>
+                <img src="https://media.licdn.com/dms/image/v2/D4E0BAQE0fp2sCqnVLg/company-logo_200_200/company-logo_200_200/0/1738855736997/amazon_web_services_logo?e=1754524800&v=beta&t=9RIotHwQ7F79sX-EvRqOw_fq8fjqZa8IbfrN-a2T-G0"
+                    alt="AWS Logo" onerror="this.style.display='none';" />
+                <li>AWS Technical Essentials</li>
+            </ul>
+        </section>
+    </main>
 
-    <!-- ============================== CERTIFICATIONS SECTION ============================== -->
-    <section class="resume-section" id="certifications">
-        <h2 class="section-title">Certifications</h2>
-        <ul>
-            <img src="https://media.licdn.com/dms/image/v2/D4E0BAQE0fp2sCqnVLg/company-logo_200_200/company-logo_200_200/0/1738855736997/amazon_web_services_logo?e=1754524800&v=beta&t=9RIotHwQ7F79sX-EvRqOw_fq8fjqZa8IbfrN-a2T-G0"
-                alt="AWS Logo" onerror="this.style.display='none';" />
-            <li>AWS Technical Essentials</li>
-        </ul>
-    </section>
+    <!--  FOOTER  -->
 
-    <!-- ============================== FOOTER ============================== -->
     <footer>
-        <p style="text-align: center; padding: 1rem; color: #666;">
-            &copy; 2025 Adrian Ortiz • <a href="index.html">Back to Home</a>
-        </p>
+        <p>&copy; 2025 Adrian Ortiz | <a href="index.html">Back to Home</a></p>
     </footer>
+
+    <!-- Back-to-Top Button -->
+    <button id="back-to-top">↑ Top</button>
+
+    <!-- Shared JS for Back-to-Top, Formspree & Skill Filter -->
+    <script src="js/app.js"></script>
 </body>
 
 </html>

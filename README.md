@@ -1,276 +1,154 @@
 # Adrian Ortiz Portfolio
 
-Welcome to my personal portfolio website, built as part of the MET CS 601 Term Project. This repository contains a fully responsive, multi-page portfolio showcasing my background, projects, skills, and professional experience. The site is hosted on GitHub Pages at:
+Welcome to my personal portfolio website, built for the MET CS 601 Term Project. This repository features a responsive, multi-page site showcasing professional experience, projects, skills, and interactive enhancements.
 
-```
-https://adrianeortiz.github.io/
-```
+**Live Demo:** https://adrianeortiz.github.io/
 
 ---
 
 ## Table of Contents
 
-1. [Project Overview](#project-overview)  
+1. [Overview](#overview)  
 2. [Repository Structure](#repository-structure)  
 3. [Pages & Features](#pages--features)  
-4. [Local Preview & Testing](#local-preview--testing)  
-5. [Deployment on GitHub Pages](#deployment-on-github-pages)  
-6. [Asset Organization](#asset-organization)  
-7. [Styling & Responsive Behavior](#styling--responsive-behavior)  
-8. [Credits & Acknowledgments](#credits--acknowledgments)  
+4. [Enhancements](#enhancements)  
+   - [Contact Form](#contact-form)  
+   - [Skill Badge Filter](#skill-badge-filter)  
+   - [Back to Top Button](#back-to-top-button)  
+5. [Local Preview & Testing](#local-preview--testing)  
+6. [Deployment on GitHub Pages](#deployment-on-github-pages)  
+7. [Asset Organization](#asset-organization)  
+8. [Styling & Responsive Behavior](#styling--responsive-behavior)  
+9. [Credits & Acknowledgments](#credits--acknowledgments)  
 
 ---
 
-## Project Overview
+## Overview
 
-This portfolio site demonstrates:
+This portfolio demonstrates:
 
-- **HTML5 semantics** (use of `<header>`, `<nav>`, `<main>`, `<aside>`, `<section>`, and `<footer>`).  
-- **CSS3 Flexbox & Grid** for layout, responsive design, and component styling.  
-- **JavaScript/DOM (optional enhancements)**—the core pages do not rely on external libraries, but can easily integrate small scripts if desired.  
-- **Multi-page navigation**, with six core content pages:  
-  - Home  
-  - Projects  
-  - About Me  
-  - Skills  
-  - Resume  
-  - Contact  
-
-All pages share a consistent header and footer, ensuring intuitive navigation across the site. The code is designed to validate cleanly under W3C standards and adapt gracefully to mobile and desktop viewports.
+- Modern **HTML5** structure with semantic elements.  
+- **CSS3** Flexbox and Grid for layout and responsiveness.  
+- **JavaScript** interactivity (FILTER, smooth-scroll, Formspree integration).  
+- External API integration (Formspree) for contact form — extra credit.  
+- Custom JS features: skill badge filtering and Back‑to‑Top button — extra credit.
 
 ---
 
 ## Repository Structure
 
-```text
-adrianeortiz.github.io/              ← Root of the GitHub Pages repository
-├── assets/                          ← All static images and media assets
-│   └── images/
-│       ├── Linux-Commands-Cheat-Sheet.jpg
-│       ├── personal_finance_manager.png
-│       ├── profile-pic-compressed.jpg
-│       ├── pycalc-howto.gif
-│       └── url-shortener-demo.gif
-│
-├── css/                             ← Main styles directory
-│   └── styles.css                   ← Core CSS for layout, components, and responsiveness
-│
-├── about.html                       ← “About Me” page (biography & fun facts)
-├── contact.html                     ← Contact form and direct email link
-├── index.html                       ← Homepage (hero + featured projects)
-├── projects.html                    ← Detailed project descriptions with images & links
-├── resume.html                      ← Full professional resume overview (experience, education, skills, certifications)
-├── skills.html                      ← List of technical skills & “skill badge” cards
-└── README.md                        ← Project documentation (this file)
 ```
-
-- **`.gitignore`**  
-  Lists files/folders to ignore (e.g. OS-specific files, editor settings).  
-
-- **`README.md`**  
-  Describes the project, its structure, and instructions for local preview and deployment.
+adrianeortiz.github.io/
+├── assets/                
+│   └── images/            # All project and logo images
+├── css/                   
+│   └── styles.css         # Core styles and uniform image rules
+├── js/
+│   └── app.js             # Contact form, filtering, Back‑to‑Top
+├── about.html             
+├── contact.html           # Formspree-powered contact form
+├── index.html             
+├── projects.html          # Organized with .projects-section class
+├── resume.html            
+├── skills.html            
+└── README.md              
+```
 
 ---
 
 ## Pages & Features
 
-Below is a brief summary of each HTML page, including the key sections and functionality:
+### Home (`index.html`)
+- Hero section and featured project cards.
 
-### 1. `index.html` (Home)
-- **Hero Section**  
-  - Large heading (“Hello, I’m Adrian Ortiz”), subtitle (Software Engineer | SRE | AI Enthusiast | Father), and a “Learn More About Me” button linking to `about.html`.  
-- **Featured Projects Grid**  
-  - A responsive grid of “project cards,” each with an image, title, short description, and a link to the corresponding project section on `projects.html`.  
-  - Projects displayed:  
-    1. PyCalc (PyQt-based calculator)  
-    2. URL Shortener (FastAPI + SQLite)  
-    3. Personal Finance Manager (Python + Google Sheets)  
-    4. Linux Commands Cheat Sheet (Interactive Readme with Linux commands)  
+### Projects (`projects.html`)
+- Four project sections with consistent 250×250 image boxes (`.projects-section img`).
 
-### 2. `projects.html` (Projects)
-- Contains four “project” sections, each with:  
-  - A heading (e.g. “PyCalc”)  
-  - An animated GIF or Image screenshot under `assets/images/`  
-  - A descriptive paragraph  
-  - External link to GitHub repository 
-- Uses `<hr />` separators to keep content visually distinct.
+### About Me (`about.html`)
+- Sidebar biography and fun facts.
 
-### 3. `about.html` (About Me)
-- **Sidebar (Left Column)**  
-  - “About Me” heading, avatar (`profile-pic-compressed.jpg`), and three paragraphs describing my background, education, and personal interests.  
-- **Main Section (Right Column)**  
-  - “Fun Facts” list (location, family, hobbies, etc.).  
-- Demonstrates use of `<aside>` for secondary content and `<section>` for primary content.
+### Skills (`skills.html`)
+- Technical skills list and interactive skill badge filter.
 
-### 4. `skills.html` (Skills)
-- **Sidebar (Left Column)**  
-  - “Technical Skills” heading and a bulleted list of languages, frameworks, DevOps tools, CI/CD, databases, and productivity tools.  
-- **Main Section (Right Column)**  
-  - “Skill Badges” displayed as a responsive grid of “skill cards” (Python, Java, Docker & Kubernetes, React).  
-- Showcases CSS Grid usage in the `.projects-grid` class for a multi-column layout that wraps at smaller breakpoints.
+### Resume (`resume.html`)
+- Full professional history with uniform 60×60 logos.
+- Education and certifications.
 
-### 5. `resume.html` (Resume)
-- **Resume Header**  
-  - Profile photo, full name, email link, location, LinkedIn & GitHub links, home page link 
-- **Experience Section**  
-  - LinkedIn "Experience" section used as entries (January 2015 – Present), including roles such as:  
-    - Solutions Engineer @ Qase  
-    - Chief Executive Officer @ EVEREXPAND ENTERPRISES INC  
-    - Construction Professional @ CSM Waterworks 
-    - Associate Site Reliability Engineer @ Workday  
-    - Associate QA Engineer – Authentication @ Veeva Systems  
-    - Child Support Specialist @ Kern County CMS  
-    - Multiple volunteer positions (CrowdDoing)  
-    - IT Support roles (Penumbra, RWS, Group Nine Media, San Francisco State University, Munchery)  
-  - Each entry includes a logo (pulled from LinkedIn CDN or local asset) and bullet points of Skills used and acquired for each role.  
-- **Education & Professional Development**  
-  - Master of Science in Software Development (Boston University)  
-  - Bachelor of Science in Business Information Systems (San Francisco State University)  
-  - DevOps Bootcamp (TechWorld with Nana)  
-- **Skills & Technologies**  
-  - Comprehensive list of languages, frameworks, DevOps & SRE tools, testing & QA, web & mobile, databases, general tools, and soft skills.  
-- **Certifications**  
-  - AWS Technical Essentials (with AWS logo)  
+### Contact (`contact.html`)
+- Formspree-integrated contact form (no `mailto:`).
 
-### 6. `contact.html` (Contact)
-- A simple contact form (name, email, message) that sends via `mailto:adrian.everardo.ortiz@gmail.com`  
-- Alternative direct email link at the bottom.  
-- Demonstrates basic form styling and accessibility using `<label>`, `<input>`, `<textarea>`, and `<button>`.
+All pages include the same navigation header and footer for consistency.
+
+---
+
+## Enhancements
+
+### Contact Form
+
+- Uses **Formspree** to send messages via API.
+- Removes default `mailto:` behavior.
+- Displays status messages via JS (in `js/app.js`).
+
+### Skill Badge Filter
+
+- Text input to filter skill cards by keyword.
+- Implemented in `js/app.js` using DOM events.
+
+### Back to Top Button
+
+- Fixed button appears after scrolling.
+- Smooth-scroll back to top using JS (`window.scrollTo`).
 
 ---
 
 ## Local Preview & Testing
 
-To preview the site on your local machine, follow these steps:
-
-1. **Clone the repository** (if you haven’t already):  
+1. **Clone the repo**  
    ```bash
    git clone https://github.com/adrianeortiz/adrianeortiz.github.io.git
    cd adrianeortiz.github.io
    ```
-
-2. **Verify folder structure**:  
-   Ensure you see the `assets/`, `css/`, and all six `.html` files (index, about, projects, skills, resume, contact).
-
-3. **Open each HTML file in your browser**:  
-   - On macOS:  
-     ```bash
-     open index.html
-     open about.html
-     open projects.html
-     open skills.html
-     open resume.html
-     open contact.html
-     ```  
-   - On Windows (PowerShell):  
-     ```powershell
-     start index.html
-     start about.html
-     start projects.html
-     start skills.html
-     start resume.html
-     start contact.html
-     ```  
-   - Or simply double-click each file in your file explorer.
-
-4. **Verify the following**:  
-   - Navigation bar links correctly navigate between pages.  
-   - CSS (`css/styles.css`) loads on every page—check the page background, fonts, and layout.  
-   - Images from `assets/images/` display without 404 errors.  
-   - Responsive behavior: resize the browser window below **800px**, and confirm the layout stacks vertically (single-column main content).  
-
-5. **Lint & Validate** (optional, but recommended):  
-   - Run your HTML files through the [W3C HTML Validator](https://validator.w3.org/) to catch any syntax issues.  
-   - Run `css/styles.css` through the [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) to ensure your CSS is standards-compliant.
+2. **Open files**  
+   ```bash
+   open index.html    # macOS
+   start index.html   # Windows
+   ```
+3. **Verify**  
+   - Navigation links, CSS, JS interactivity, and image layouts.
+   - Responsive at <800px width.
 
 ---
 
 ## Deployment on GitHub Pages
 
-This repository is configured as a **User Page**. GitHub Pages will automatically serve content from the `main` branch root folder. The published site URL is:
-
-```
-https://adrianeortiz.github.io/
-```
+- Hosted as a **User Page** from the `main` branch root.
 
 ---
 
 ## Asset Organization
 
-All images, GIFs, and logos are stored under:
+All static images are in `assets/images/`. Logos are uniform via CSS (`.resume-section img` and `.projects-section img` rules in `styles.css`).
 
-```
-assets/images/
-```
-
-- **`profile-pic-compressed.jpg`** (profile avatar used on About & Resume pages)  
-- **`pycalc-howto.gif`** (animation for the PyCalc project)  
-- **`url-shortener-demo.gif`** (animation for the URL Shortener project)  
-- **`personal_finance_manager.png`** (screenshot for the Personal Finance Manager project)  
-- **`Linux-Commands-Cheat-Sheet.jpg`** (static image used for the Linux cheat sheet)  
-
-On `resume.html`, many logos are pulled directly from LinkedIn’s CDN (via `<img src="...">`). If any external link fails, the `onerror="this.style.display='none';"` attribute hides the broken image.
 ---
 
 ## Styling & Responsive Behavior
 
-All pages share a single stylesheet at `css/styles.css`, which includes:
+Key CSS features in `css/styles.css`:
 
-- **Global Reset**  
-  Resets margin, padding, and box-sizing for all elements.
-
-- **Base Typography**  
-  Sets `font-family: Arial, Helvetica, sans-serif` and `line-height: 1.6` for readability.
-
-- **Header & Navigation**  
-  - `display: flex; justify-content: space-between; align-items: center`  
-  - Dark background color (`#333`), white text (`#fff`), and hover states for links.
-
-- **Grid Layout**  
-  - On larger viewports:  
-    ```css
-    main {
-      display: grid;
-      grid-template-columns: 1fr 2fr;
-      gap: 2rem;
-    }
-    ```
-  - On smaller viewports (`max-width: 800px`):  
-    ```css
-    main {
-      grid-template-columns: 1fr;
-    }
-    ```
-
-- **Projects Grid**  
-  Uses CSS Grid with `repeat(auto-fill, minmax(250px, 1fr))` to wrap project cards fluidly.
-
-- **Forms & Buttons**  
-  Basic styling for `<form>` elements in `contact.html`, including label/input alignment and hover states for `.btn` and `<button>`.
-
-- **Footer**  
-  Simple dark background with centered white text.
+- **Global reset** and base typography.  
+- **Flexbox/Grid** layouts for header, main content, and project grid.  
+- **Uniform image sizing** for project thumbnails (250×250) and resume logos (60×60).  
+- **Media queries** for single-column layout on small screens.
 
 ---
 
 ## Credits & Acknowledgments
 
-- **Portfolio Design & Implementation**  
-  - Built by Adrian Ortiz as part of the MET CS 601 (Web App Dev) Term Project.  
-  - CSS layout and responsive design reuse advanced concepts from Assignment 3 (Flexbox, CSS Grid, media queries).
-
-- **Project Assets & Screenshots**  
-  - Animated GIFs & screenshots created or captured by Adrian Ortiz.  
-  - Linux Commands Cheat Sheet image sourced from a public domain or self-created.
-
-- **Company Logos on `resume.html`**  
-  - Pulled from LinkedIn’s CDN endpoints (company profile images) or publicly hosted SVG/PNG sources.  
-  - Logos that fail to load are hidden gracefully via `onerror="this.style.display='none';"`.
-
-- **Technologies & Libraries**  
-  - Pure **HTML5** and **CSS3**—no external CSS frameworks.  
-  - Optional integration points for JavaScript/DOM if adding interactive enhancements in the future.
+- **Design & Code** by Adrian Ortiz (MET CS 601).  
+- **Assets** (GIFs, screenshots) created by Adrian Ortiz.  
+- **Logos** pulled from LinkedIn CDN or hosted locally, styled uniformly.  
+- **Formspree** for contact form handling.
 
 ---
 
-Thank you for exploring my portfolio! If you have any questions, feedback, or opportunities, please feel free to reach out via the [Contact page](contact.html) or directly at <adrian.everardo.ortiz@gmail.com>.
+Thank you for exploring my portfolio! Feel free to reach out via the [Contact page](contact.html) or at **adrian.everardo.ortiz@gmail.com**.
